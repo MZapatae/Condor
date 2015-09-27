@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App Basic Color -->
+    <color name="app.main.primary">#27808C</color>
+    <color name="app.main.primary.dark">#1f6670</color>
+    <color name="app.main.ripple">#1f6670</color>
+    <color name="app.main.accent">#1f6670</color>
+    <color name="app.main.background">#CCCCCC</color>
+
+
+    <!-- App Font Color -->
+    <color name="app.font.light.main">#FFFFFF</color>
+    <color name="app.font.dark.main">#252525</color>
+
+
+</resources>
