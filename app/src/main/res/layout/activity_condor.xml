@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cl.mzapatae.condor.Activities.Condor">
+
+    <include
+        android:id="@+id/condor_toolbar"
+        layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:id="@+id/condor_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/condor_toolbar"
+        android:layout_centerHorizontal="true"
+        android:background="@color/app.main.background"></FrameLayout>
+
+</RelativeLayout>

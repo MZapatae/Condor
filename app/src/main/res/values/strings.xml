@@ -1,6 +1,23 @@
 <resources>
     <!-- App Default String -->
-    <string name="app_name">Condor</string>
+    <string name="app_name">Condor For Twitter - Beta</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+
+
+    <string name="app.login.loginTwitter">Entrar con Twitter</string>
+
+
+    <string name="app.menu.timeline">Timeline</string>
+    <string name="app.menu.logout">Cerrar Sesion</string>
+    <string name="app.menu.settings">Ajustes</string>
+
+
+    <string name="app.accessDenied">Disculpa, permiso Denegado!</string>
+    <string name="app.invalidCredentials">Disculpa, credenciales invalidas!</string>
+    <string name="app.fetchData">Obteniendo Informacion…</string>
+    <string name="title_activity_condor">Condor</string>
+
+
 </resources>
