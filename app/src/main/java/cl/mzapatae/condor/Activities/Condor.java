@@ -1,5 +1,7 @@
 package cl.mzapatae.condor.Activities;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
@@ -25,13 +27,16 @@ import com.mikepenz.materialdrawer.model.interfaces.IProfile;
 import com.mikepenz.materialdrawer.util.DrawerImageLoader;
 import com.squareup.picasso.Picasso;
 
+import cl.mzapatae.condor.Fragments.Timeline;
 import cl.mzapatae.condor.R;
 
 public class Condor extends AppCompatActivity {
     public static Toolbar toolbar;
-    String twitterName = "Miguel A. Zapata";
-    String twitterUser = "@Miguelost";
+    private String twitterName = "Miguel A. Zapata";
+    private String twitterUser = "@Miguelost";
     private Drawer menuDrawer;
+    private Fragment fragment;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,12 +116,25 @@ public class Condor extends AppCompatActivity {
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
                     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
-                        // do something with the clicked item :D
+                        fragment = null;
+                        FragmentManager fragmentManager = getFragmentManager();
+
+                        switch (position) {
+                            case 0:
+                                fragment = Timeline.newInstance();
+                                break;
+                            default:
+                                break;
+                        }
+                        if (fragment != null) {
+                            fragmentManager.beginTransaction().replace(R.id.condor_frameLayout, fragment).commit();
+                        }
                         return false;
                     }
                 })
+                .withCloseOnClick(true)
+                .withSelectedItem(0)
                 .build();
-        menuDrawer.setSelection(1);
     }
 
     @Override

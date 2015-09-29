@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cl.mzapatae.condor.Fragments.Timeline">
+
+    <RelativeLayout
+        android:id="@+id/timeline_relativeLayot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app.main.background"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/timeline_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app.main.background"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+
+</FrameLayout>

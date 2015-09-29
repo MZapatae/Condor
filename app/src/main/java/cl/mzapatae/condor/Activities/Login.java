@@ -135,6 +135,7 @@ public class Login extends AppCompatActivity {
             progress = new ProgressDialog(Login.this);
             progress.setMessage(getString(R.string.app_fetchData));
             progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+            progress.setProgressStyle(R.style.MaterialBaseBaseTheme_Light);
             progress.setIndeterminate(true);
             progress.show();
         }

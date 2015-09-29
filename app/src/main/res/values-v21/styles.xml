@@ -1,13 +1,13 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/app.main.primary</item>
         <item name="colorPrimaryDark">@color/app.main.primary.dark</item>
         <item name="colorAccent">@color/app.main.accent</item>
     </style>
 
-    <style name="AppTheme.Toolbar" parent="Theme.AppCompat.NoActionBar">
+    <style name="AppTheme.Toolbar" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:textColorPrimary">@color/app.font.light.main</item>
         <item name="actionMenuTextColor">@color/app.font.light.main</item>
         <item name="android:textColorSecondary">@color/app.font.light.main</item>
